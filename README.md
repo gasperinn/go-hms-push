@@ -1,6 +1,6 @@
 # go-hms-push
 
-[![GoDoc](https://godoc.org/github.com/icecream78/go-hms-push?status.svg)](https://godoc.org/github.com/icecream78/go-hms-push)
+[![GoDoc](https://godoc.org/github.com/gasperinn/go-hms-push?status.svg)](https://godoc.org/github.com/gasperinn/go-hms-push)
 
 This project was reworked version of [Huawei demo pack](https://github.com/HMS-Core/hms-push-serverdemo-go).
 
@@ -13,7 +13,7 @@ More information on [Huawei HMS Core](https://developer.huawei.com/consumer/en/d
 To install go-hms-push, use `go get`:
 
 ```bash
-go get github.com/icecream78/go-hms-push
+go get github.com/gasperinn/go-hms-push
 ```
 
 ## Sample Usage
@@ -27,7 +27,7 @@ import (
 	"context"
 	"log"
 
-	hms "github.com/icecream78/go-hms-push"
+	hms "github.com/gasperinn/go-hms-push"
 )
 
 const (
