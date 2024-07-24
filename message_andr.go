@@ -210,7 +210,7 @@ type AndroidNotification struct {
 
 	// Indicates whether to display notification messages on the foreground when an app is running on the foreground
 	// For details refer to: https://developer.huawei.com/consumer/en/doc/development/HMS-Guides/push-other#h1-1576146927576-2
-	ForegroundShow bool `json:"foreground_show,omitempty"`
+	ForegroundShow *bool `json:"foreground_show,omitempty"`
 
 	// TODO: add inbox_content
 	// TODO: add buttons
@@ -418,7 +418,8 @@ func GetDefaultAndroidNotification() *AndroidNotification {
 	notification.UseDefaultVibrate = true
 	notification.UseDefaultLight = true
 	notification.Visibility = VisibilityPrivate
-	notification.ForegroundShow = true
+	foregroundShow := true
+	notification.ForegroundShow = &foregroundShow
 
 	notification.AutoCancel = true
 
